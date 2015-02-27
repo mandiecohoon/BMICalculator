@@ -1,0 +1,178 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:useDefaultMargins="true"
+    tools:context="com.mandiecohoon.bmicalculator.MainActivity" >
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/weight_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+   
+    <EditText
+        android:id="@+id/weightTextEdit"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:digits="0123456789"
+        android:inputType="number"
+        tools:ignore="LabelFor" >
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/weightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:background="@android:color/holo_purple"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/height_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+ 
+
+    <EditText
+        android:id="@+id/heightTextEdit"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:digits="0123456789"
+        android:inputType="number"
+        tools:ignore="LabelFor" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/heightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:background="@android:color/holo_purple"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/bmiTextView"
+        android:text="@string/bmi_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@android:color/darker_gray"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/metricTextView"
+        android:layout_gravity="left"
+        android:text="@string/metric_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <CheckBox
+        android:id="@+id/metricCheckBox"
+        android:layout_gravity="left"
+        android:text="@string/yes"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/bmi_values"
+        android:layout_gravity="left"
+        android:text="@string/bmi_values_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/under_label"
+        android:layout_gravity="left"
+        android:text="@string/underLabelText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/under_info"
+        android:layout_gravity="left"
+        android:text="@string/underInfoText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/normal_label"
+        android:layout_gravity="left"
+        android:text="@string/normalLabelText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/normal_info"
+        android:layout_gravity="left"
+        android:text="@string/normalInfoText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/over_label"
+        android:layout_gravity="left"
+        android:text="@string/overLabelText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/over_info"
+        android:layout_gravity="left"
+        android:text="@string/overInfoText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/ob_label"
+        android:layout_gravity="left"
+        android:text="@string/obLabelText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/ob_info"
+        android:layout_gravity="left"
+        android:text="@string/obInfoText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlHardcoded" />
+
+</GridLayout>

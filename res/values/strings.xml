@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BMICalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="weight_text">Weight</string>
+    <string name="height_text">Height</string>
+    <string name="bmi_text">BMI</string>
+    <string name="metric_text">Metric</string>
+    <string name="Yes">metric_yes</string>
+    <string name="yes">Yes</string>
+    <string name="bmi_values_text">BMI Values</string>
+    <string name="underLabelText">Underweight:</string>
+    <string name="underInfoText">&lt; 18.5</string>
+    <string name="normalLabelText">Normal:</string>
+    <string name="normalInfoText">18.5 to 24.9</string>
+    <string name="overLabelText">Overweight:</string>
+    <string name="overInfoText">25 to 29.9</string>
+    <string name="obLabelText">Obese:</string>
+    <string name="obInfoText">30 +</string>
+
+</resources>
